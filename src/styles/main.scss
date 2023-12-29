@@ -1,0 +1,39 @@
+@import './font.scss';
+
+#scroll-message::-webkit-scrollbar,
+#scroll-conversation::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+#scroll-message::-webkit-scrollbar-thumb,
+#scroll-conversation::-webkit-scrollbar-thumb {
+  @apply bg-gray-100;
+}
+
+#scroll-message::-webkit-scrollbar-track,
+#scroll-conversation::-webkit-scrollbar-track {
+  @apply bg-gray-700;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  @apply p-0 border-none;
+}
+
+.burger > div {
+  @apply bg-slate-50 w-6 h-[3px] m-[5px];
+  transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
